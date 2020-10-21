@@ -17,5 +17,6 @@ val textFile = sc.textFile("hdfs://...") // declaração de uma variavel imutave
 
 
 Foi ultilizado o DataBricks para criar o cluster e processar os dados.
-O código com as respostas pode ser visto pelo Notebook hospedado no DataBricks
+
+O código com as respostas pode ser visto no Notebook hospedado no DataBricks
 link: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7959427193928332/1633951346216040/5027986312098891/latest.html
