@@ -25,25 +25,25 @@ val textFile = sc.textFile("hdfs://...") // declaração de uma variavel imutave
 
 
 9. Os 5 URLs que mais causaram erro 404?
-+--------------------+-----+
-|                host|count|
-+--------------------+-----+
-|hoohoo.ncsa.uiuc....|  251|
-|jbiagioni.npt.nuw...|  131|
-|piweba3y.prodigy....|  110|
-|piweba1y.prodigy....|   92|
-|phaelon.ksc.nasa....|   64|
-+--------------------+-----+
 
-+--------------------+-----+
-|                host|count|
-+--------------------+-----+
-|dialip-217.den.mm...|   62|
-|piweba3y.prodigy....|   47|
-|       155.148.25.4 |   44|
-|       maz3.maz.net |   39|
-|      gate.barr.com |   38|
-+--------------------+-----+
+              host  count
+
+hoohoo.ncsa.uiuc....  251
+jbiagioni.npt.nuw...  131
+piweba3y.prodigy....  110
+piweba1y.prodigy....   92
+phaelon.ksc.nasa....   64
+
+
+
+                 host count
+
+dialip-217.den.mm...   62
+piweba3y.prodigy....   47
+       155.148.25.4    44
+     maz3.maz.net      39
+      gate.barr.com    38
+
 
 
 10. Quantidade de erros 404 por dia?
