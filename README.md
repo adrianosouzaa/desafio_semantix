@@ -18,5 +18,4 @@ val textFile = sc.textFile("hdfs://...") // declaração de uma variavel imutave
 
 
 O código com as respostas pode ser visto pelo Notebook hospedado no DataBricks
-# link: 
-https://community.cloud.databricks.com/?o=7959427193928332#notebook/1633951346216040/command/707503682753864
+link: https://community.cloud.databricks.com/?o=7959427193928332#notebook/1633951346216040/command/707503682753864
