@@ -13,54 +13,8 @@
 5. GroupByKey é menos eficiente que reduceByKey em grandes dataset. Por quê? reduceByKey possui uma implementação que o torna mais eficiente quando o conjunto de dados demanda um maior poder computacional devido a forma de contagem dos elementos agrupados acontecerem de forma distribuída, e os grupos já sumarizados são calculados em uma etapa posterior sem grande necessidade de processamento robusto. Desta formas, em grandes datasets é utilizado a capacidade do processamento distribuído para gerar o resultado de agrupamento.
 
 6. Explique o que o código Scala abaixo faz?
-val textFile = sc.textFile("hdfs://...") // declaração de uma variavel imutavel “textFile” , sendo atribuido a ela os dados contidos no //HDFS com o uso da função SparkContext val counts = textFile.flatMap(line => line.split(" ")) // declaração da variável “count” , sendo atribuído a ela os conjuntos de dados separados por //espaço .map(word => (word, 1)) //mapeamento dos grupos encontrados no dataset .reduceByKey(_ + _) //agrupamento dos grupos com o uso da implementação reduceByKey counts.saveAsTextFile("hdfs://...") //Resultado contendo as palavras do arquivo com a contagem de ocorrências
-
-
-7. Número de hosts únicos?
-81983 e 75060.
-
-
-8. O total de erros 404?
-10845 e 10056
-
-
-9. Os 5 URLs que mais causaram erro 404?
-
-              host  count
-
-hoohoo.ncsa.uiuc....  251
-jbiagioni.npt.nuw...  131
-piweba3y.prodigy....  110
-piweba1y.prodigy....   92
-phaelon.ksc.nasa....   64
+val textFile = sc.textFile("hdfs://...") // declaração de uma variavel imutavel “textFile” , sendo atribuido a ela os dados contidos no //HDFS com o uso da função SparkContext val counts = textFile.flatMap(line => line.split(" ")) // declaração da variável “count” , sendo atribuído a ela os conjuntos de dados separados por //espaço .map(word => (word, 1)) //mapeamento dos grupos encontrados no dataset .reduceByKey(_ + _) //agrupamento dos grupos com o uso da implementação reduceByKey counts.saveAsTextFile("hdfs://...") //Resultado contendo as palavras do arquivo com a contagem de ocorrências.
 
 
 
-                 host count
-
-dialip-217.den.mm...   62
-piweba3y.prodigy....   47
-       155.148.25.4    44
-     maz3.maz.net      39
-      gate.barr.com    38
-
-
-
-10. Quantidade de erros 404 por dia?
-10807
-
-
-11. O total de bytes retornados?
-
-+------------+
-|sum(tamanho)|
-+------------+
-| 38695973491|
-+------------+
-
-+------------+
-|sum(tamanho)|
-+------------+
-| 26828341424|
-+------------+
 
