@@ -16,6 +16,6 @@
 val textFile = sc.textFile("hdfs://...") // declaração de uma variavel imutavel “textFile” , sendo atribuido a ela os dados contidos no //HDFS com o uso da função SparkContext val counts = textFile.flatMap(line => line.split(" ")) // declaração da variável “count” , sendo atribuído a ela os conjuntos de dados separados por //espaço .map(word => (word, 1)) //mapeamento dos grupos encontrados no dataset .reduceByKey(_ + _) //agrupamento dos grupos com o uso da implementação reduceByKey counts.saveAsTextFile("hdfs://...") //Resultado contendo as palavras do arquivo com a contagem de ocorrências.
 
 
-
+Foi ultilizado o DataBricks para criar o cluster e processar os dados.
 O código com as respostas pode ser visto pelo Notebook hospedado no DataBricks
 link: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/7959427193928332/1633951346216040/5027986312098891/latest.html
