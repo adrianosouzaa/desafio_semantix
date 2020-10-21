@@ -1,6 +1,5 @@
 # desafio_semantix
 
-# Desafio Engenheiro de dados
 
 1. Qual o objetivo do comando cache em Spark? O comando cache tem a função de carregar os dados em memória, e deixa-lo disponível para as execuções seguintes. Este comando é útil em operações que utilizem o conjunto de dados repetidamente, assim somente na primeira execução haverá o tempo de consulta e carga em memoria dos dados.
 
